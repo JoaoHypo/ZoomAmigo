@@ -10,7 +10,7 @@ baixa visão a interagirem com planílhas excel de forma mais prática e acessí
 import pandas as pd
 
 # Lê o arquivo Excel
-df = pd.read_excel('nome_do_arquivo.xlsx')
+df = pd.read_excel('T1.xlsx')
 
 # Pede para o usuário digitar a linha e coluna da célula desejada
 linha = int(input('Digite a linha da célula: '))
