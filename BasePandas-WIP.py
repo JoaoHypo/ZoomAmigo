@@ -9,13 +9,15 @@ baixa visão a interagirem com planílhas excel de forma mais prática e acessí
 
 import pandas as pd
 
-filename = input("Digite o nome do arquivo")
+filename = input("Digite o nome do arquivo: ")
 
 # Lê o arquivo Excel
 df = pd.read_excel(filename)
 
+print(df)
+
 # Pede para o usuário digitar a linha e coluna da célula desejada
-linha = int(input('Digite a linha da célula: '))
+linha = (int(input('Digite a linha da célula: '))-1)
 coluna = input('Digite a coluna da célula: ')
 
 # Imprime o conteúdo da célula
