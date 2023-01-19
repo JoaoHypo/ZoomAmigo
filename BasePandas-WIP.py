@@ -9,8 +9,10 @@ baixa visão a interagirem com planílhas excel de forma mais prática e acessí
 
 import pandas as pd
 
+filename = input("Digite o nome do arquivo")
+
 # Lê o arquivo Excel
-df = pd.read_excel('T1.xlsx')
+df = pd.read_excel(filename)
 
 # Pede para o usuário digitar a linha e coluna da célula desejada
 linha = int(input('Digite a linha da célula: '))
