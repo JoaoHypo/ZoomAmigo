@@ -8,6 +8,11 @@ baixa visão a interagirem com planílhas excel de forma mais prática e acessí
 #Código base, interagindo com 1 planílha
 
 import pandas as pd
+from tkinter import *
+
+root = Tk()
+root.title('Zoom Amigo')
+
 
 filename = input("Digite o nome do arquivo: ")
 
@@ -22,3 +27,5 @@ coluna = input('Digite a coluna da célula: ')
 
 # Imprime o conteúdo da célula
 print(df.at[linha, coluna])
+
+root.mainloop()
